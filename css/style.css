@@ -21,12 +21,12 @@ b, main a, .divideo a, .divideo p{
     background-image: url(../img/violetafondoMAIN.png);
 }
 
-.cuadrado, .section3 div, .section4 .texto, section form .divmicuenta div, .main2 section div, .main3 div  {
+.cuadrado, .section3 div, .section4 .texto, section form .divmicuenta div, .main2 section div, .main3 div{
     background-image: url(../img/fondonegro.jpg);
     background-position: center;
     background-size: cover;
 }
-.cuadrado a:hover,.section3 div a:hover,.divideo,.divideo a:hover {
+.cuadrado a:hover,.section3 div a:hover,.divideo,.divideo a:hover,.divmicuenta a:hover{
     background-image: url(../img/neontarjeta.png);
 }
 
@@ -52,7 +52,7 @@ b, main a, .divideo a, .divideo p{
     display: inline-block;
 }
 .section3head input{
-    color: black;
+    color: black !important;
     border: 2px black solid;
     padding: 10px;
     border-radius: 20px;
@@ -116,6 +116,9 @@ b, main a, .divideo a, .divideo p{
     .headcol li a{
         font-size: 12px;
     }
+    .headcol .perf{
+        display: none;
+    }
 }
 @media screen and (max-width:740px){
     .headcol a h1{
@@ -131,9 +134,6 @@ b, main a, .divideo a, .divideo p{
     }
     .headcol li{
         font-size: 10px;
-    }
-    .section4head .perf{
-        display: none;
     }
 }
 @media screen and (max-width:600px){
@@ -522,28 +522,34 @@ b, main a, .divideo a, .divideo p{
 /** MI CUENTA  CORREJIR CODIGO **/ 
 
 .form1{
+    display: flex;
+    justify-content: center;
     align-items: center;
+    padding: 40px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 section form .divmicuenta div{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px;
-    margin: 50px 0px 50px 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 50px;
     border: 2px white solid;
-    width: 350px;
-    height: 420px;
 }
+.divmicuenta label{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
 .divmicuenta div h1 {
     margin-bottom: 15px;
 }
 .divmicuenta input{
-    color: black;
+    color: black !important;
     margin-bottom: 15px;
     background-color: white;
     border: 2px darkviolet  solid;
     padding: 10px;
-    width: 200px;
 }
 .divmicuenta a{
     padding: 10px;
@@ -551,4 +557,5 @@ section form .divmicuenta div{
     display: inline-block;
     border: 2px darkviolet  solid;
     margin-top: 20px;
+    text-align: center;
 }
