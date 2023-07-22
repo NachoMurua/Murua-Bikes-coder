@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Repuestos | MURUA BIKES </title>
+    <title> Repuestos | MURUA BIKES </title>
 </head>
 <body>
     <header class="headcol">
         <section class="section1head">
             <div>
-                <a href="../index.html"><h1>MURUA BIKES</h1></a>
+                <a href="./index.html"><h1>MURUA BIKES</h1></a>
             </div>
-            <img src="../img/nuevologo.png" alt="logomoto" width="70px" height="70px">
+            <img class="logo" src="../img/nuevologo.png" alt="logomoto" width="65px" height="65px">
         </section>
         <section class="section2head">
             <nav>
@@ -27,7 +28,19 @@
             <input type="text" name="" placeholder="buscar productos...">
         </section>
         <section class="section4head">
-                <a href=""><img src="../img/carrito.png" alt="carrito"></a>
+            <div>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../img/carrito.png" alt="carrito"alt="carrito">
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Agregar productos</a></li>
+                    <li><a class="dropdown-item" href="#">Finalizar compra</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li>Aun no hay productos en la lista</li>
+                    </ul>
+                </li>
+            </div>
                 <a href="../pages/micuenta.html"><img src="../img/perfil.png" alt="perfil"></a>
         </section>
     </header>
@@ -36,19 +49,19 @@
             <h3 class="h3section">ACEITES</h3>
         </section>
         <section class="section3">
-            <div class="div4-3">
+            <div class="div1-3">
                 <img src="../img/aceitebajaj.png" alt="...">
                 <p>Aceite bajaj</p>
                 <h3>$187.690</h3>
                 <a href="">COMPRAR</a>
             </div>
-            <div class="div4-3">
+            <div class="div2-3">
                 <img src="../img/aceitebajaj.png" alt="...">
                 <p>Aceite bajaj</p>
                 <h3>$187.690</h3>
                 <a href="">COMPRAR</a>
             </div>
-            <div class="div4-3">
+            <div class="div3-3">
                 <img src="../img/aceitebajaj.png" alt="...">
                 <p>Aceite bajaj</p>
                 <h3>$187.690</h3>
@@ -64,19 +77,19 @@
             <h3 class="h3section">Repuestos varios</h3>
         </section>
         <section class="section3">
-            <div class="div4-3">
+            <div class="div1-3">
                 <img src="../img/rosso.png" alt="...">
                 <p>Diablo rosso II</p>
                 <h3>$187.690</h3>
                 <a href="">COMPRAR</a>
             </div>
-            <div class="div4-3">
+            <div class="div2-3">
                 <img src="../img/rosso.png" alt="...">
                 <p>Diablo rosso II</p>
                 <h3>$187.690</h3>
                 <a href="">COMPRAR</a>
             </div>
-            <div class="div4-3">
+            <div class="div3-3">
                 <img src="../img/rosso.png" alt="...">
                 <p>Diablo rosso II</p>
                 <h3>$187.690</h3>
@@ -115,5 +128,6 @@
             </ul>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

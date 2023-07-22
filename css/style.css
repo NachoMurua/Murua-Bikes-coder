@@ -38,17 +38,16 @@ b, main a, .divideo a, .divideo p{
     justify-content: space-between;
     align-items: center;
 }
-.section1head h1{
-    font-size: 45px;
-    font-weight: 450;
-    padding: 18px;
-}
 .section1head{
     display: flex;
-    align-items: center;
+    padding-left: 20px;
+}
+.section1head a h1{
+    font-size: 45px;
+    font-weight: 900%;
 }
 .section2head li{
-    padding: 35px 40px 35px 40px;
+    padding: 30px 40px 30px 40px;
     display: inline-block;
 }
 .section3head input{
@@ -66,7 +65,13 @@ b, main a, .divideo a, .divideo p{
     height: 45px;
     width: 45px;
     margin-right: 25px;
-    margin-left: 10px;
+}
+.section4head div li a{
+    color: black !important;
+}
+.section4head div li{
+    color: black !important;
+    text-align: center;
 }
 /* MEDIA QUERIES HEADER */ 
 
@@ -257,7 +262,9 @@ b, main a, .divideo a, .divideo p{
 }
 /* SECTION CARROUSEL*/
 .section5{
-    background-color: black;
+    background-image: url(../img/fondonegrohumo.png);
+    background-size: cover;
+    object-fit: cover;
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -531,8 +538,6 @@ b, main a, .divideo a, .divideo p{
 }
 section form .divmicuenta div{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
     padding: 50px;
     border: 2px white solid;
 }
