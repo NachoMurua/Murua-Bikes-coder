@@ -31,8 +31,6 @@ b, main a, .divideo a, .divideo p{
 }
 
 .headcol{
-    background-position: center;
-    background-size: cover;
     background-attachment: fixed;
     display: flex;
     justify-content: space-between;
@@ -73,21 +71,24 @@ b, main a, .divideo a, .divideo p{
     color: black !important;
     text-align: center;
 }
+.DropdownBurguer{
+    display: none;
+}
 /* MEDIA QUERIES HEADER */ 
 
 @media screen and (max-width:1190px){
     .headcol a h1{
-        font-size: 32px;
+        font-size: 30px;
     }
     .headcol .logo{
         width: 55px;
         height: 55px;
     }
     .headcol input{
-        width: 200px;
+        width: 190px;
     }
     .headcol li a{
-        font-size: 16px;
+        font-size: 15px;
     }
     .headcol a img{
         width: 35px;
@@ -96,7 +97,7 @@ b, main a, .divideo a, .divideo p{
 }
 @media screen and (max-width:1035px){
     .headcol input{
-        width: 180px;
+        width: 170px;
     }
     .headcol .logo{
         width: 40px;
@@ -105,13 +106,13 @@ b, main a, .divideo a, .divideo p{
 }
 @media screen and (max-width:995px){
     .headcol a h1{
-        font-size: 30px;
+        font-size: 28px;
     }
     .headcol input{
-        width: 160px;
+        width: 130px;
     }
     .headcol li a{
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 @media screen and (max-width:920px){
@@ -129,21 +130,30 @@ b, main a, .divideo a, .divideo p{
     .headcol a h1{
         font-size: 25px;
     }
-    .logo{
-        display: none;
+    .headcol li img{
+        width: 25px;
+        height: 25px;
     }
 }
 @media screen and (max-width:675px){
     .headcol{
-        justify-content: center;
+        justify-content: space-between;
     }
-    .headcol li{
-        font-size: 10px;
-    }
-}
-@media screen and (max-width:600px){
-    .headcol li{
+    .DropdownCarrito{
         display: none;
+    }
+    .DropdownBurguer{
+        display: inline-block;
+    }
+    .headcol .navlist{
+        display: none;
+    }
+    .headcol .section1head{
+        padding-top: 15px;
+    }
+    .headcol .logo{
+        margin-left: 10px;
+        margin-bottom: 10px;    
     }
 }
 
@@ -312,12 +322,6 @@ b, main a, .divideo a, .divideo p{
     border: 2px black solid;
     border-radius: 8px;
 }
-.section3 div a{
-    padding: 8px;
-    border-radius: 10px;
-    border: 2px darkviolet solid;
-}
-
 .section3 div h3{
     border: 2px darkviolet  double;
     margin-top: 15px;
@@ -325,6 +329,12 @@ b, main a, .divideo a, .divideo p{
     padding: 6px;
     border-radius: 10px;
 }
+.section3 div a{
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px darkviolet solid;
+}
+
 
 /* MEDIA QUERIES SECTION 3 */
 
@@ -350,7 +360,6 @@ b, main a, .divideo a, .divideo p{
     text-align: center;
 }
 
-
 /** SECTION 4 **/
 .section4{
     display: flex;
@@ -358,7 +367,7 @@ b, main a, .divideo a, .divideo p{
     align-items: center;
     border-bottom: 2px solid black;
 }
-.divideo{
+.section4 .divideo{
     border-radius: 8px;
     background-position: center;
     background-size: cover;
@@ -375,6 +384,13 @@ b, main a, .divideo a, .divideo p{
     transition: 300ms;
     object-fit: cover;
 }
+.divideo h4{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: black;
+    text-align: center;
+    letter-spacing: 1px;
+}
 .divideo img{
     height: 220px;
     width: 220px;
@@ -388,13 +404,6 @@ b, main a, .divideo a, .divideo p{
     padding: 6px;
     border-radius: 8px;
     font-size: 25px;
-}
-.divideo h4{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: black;
-    text-align: center;
-    letter-spacing: 1px;
 }
 .divideo a{
     padding: 10px;
@@ -485,24 +494,22 @@ b, main a, .divideo a, .divideo p{
 .div1fot iframe:hover{
     transform: scale(1.10);
     transition: 200ms;
-    object-fit: cover;
 }
 .div2fot ul{
     display: inline-block;
     padding-top: 10px;
 }
 .div2fot ul li{
-    display: block;
     text-align: center;
     font-size: 18px;
     margin-bottom: 15px;
 }
-.div3fot ul li{
-    padding-right: 25px;
-}
 .div3fot ul{
     display: inline-block;
     padding: 20px;
+}
+.div3fot ul li{
+    padding-right: 25px;
 }
 .div3fot img{
     margin: 15px;
@@ -519,6 +526,10 @@ b, main a, .divideo a, .divideo p{
     .footer{
         flex-wrap: wrap;
         justify-content: space-around;
+        align-items: center;
+    }
+    .div1fot p{
+        text-align: center;
     }
     .div1fot iframe{
         width: 250px;
@@ -526,7 +537,7 @@ b, main a, .divideo a, .divideo p{
     }
 }
 
-/** MI CUENTA  CORREJIR CODIGO **/ 
+/** MI CUENTA  **/ 
 
 .form1{
     display: flex;
@@ -536,18 +547,17 @@ b, main a, .divideo a, .divideo p{
     border-top: 2px solid black;
     border-bottom: 2px solid black;
 }
-section form .divmicuenta div{
+.divmicuenta div{
     display: grid;
     padding: 50px;
     border: 2px white solid;
 }
+.divmicuenta div h1{
+    margin-bottom: 15px;
+}
 .divmicuenta label{
     text-align: center;
     margin-bottom: 5px;
-}
-
-.divmicuenta div h1 {
-    margin-bottom: 15px;
 }
 .divmicuenta input{
     color: black !important;
@@ -563,4 +573,10 @@ section form .divmicuenta div{
     border: 2px darkviolet  solid;
     margin-top: 20px;
     text-align: center;
+}
+
+@media screen and (max-width:465px){
+    .divmicuenta div h1{
+        text-align: center;
+    }
 }
