@@ -123,7 +123,8 @@ b, main a, .divideo a, .divideo p{
         font-size: 12px;
     }
     .headcol .perf{
-        display: none;
+        width: 25px;
+        height: 25px;
     }
 }
 @media screen and (max-width:740px){
