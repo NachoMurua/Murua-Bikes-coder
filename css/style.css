@@ -21,13 +21,20 @@ b, main a, .divideo a, .divideo p{
     background-image: url(../img/violetafondoMAIN.png);
 }
 
-.cuadrado, .section3 div, .section4 .texto, section form .divmicuenta div, .main2 section div, .main3 div{
+.cuadrado, .section3 div, .section4 .texto, .iniciar-sesion, section form .divmicuenta div, .main2 section div, .main3 div{
     background-image: url(../img/fondonegro.jpg);
     background-position: center;
     background-size: cover;
 }
 .cuadrado a:hover,.section3 div a:hover,.divideo,.divideo a:hover,.divmicuenta a:hover{
     background-image: url(../img/neontarjeta.png);
+}
+.main1, .iniciar-sesion button{
+    background-image: url(../img/violetafondoMAIN2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .headcol{
@@ -114,6 +121,9 @@ b, main a, .divideo a, .divideo p{
     .headcol li a{
         font-size: 12px;
     }
+    .headcol .perf{
+        display: none;
+    }   
 }
 @media screen and (max-width:920px){
     .headcol input{ 
@@ -121,10 +131,6 @@ b, main a, .divideo a, .divideo p{
     }
     .headcol li a{
         font-size: 12px;
-    }
-    .headcol .perf{
-        width: 25px;
-        height: 25px;
     }
 }
 @media screen and (max-width:740px){
@@ -158,13 +164,24 @@ b, main a, .divideo a, .divideo p{
     }
 }
 
-/* MAIN INDEX */
-.main1{
-    background-image: url(../img/violetafondoMAIN2.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+/*INICIO DE SESION MEDIA QUERY*/
+.iniciar-sesion{
+    display: none;
+}
+@media screen and (max-width:675px){
+    .iniciar-sesion{
+        display: flex;
+        justify-content: center;
+    }
+    .iniciar-sesion button{
+        transform: scale(1.07);
+        transition: 300ms;
+        object-fit: cover;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 8px;
+        border: 2px darkviolet double;
+    }
 }
 
 /** SECTION 1**/
@@ -275,13 +292,11 @@ b, main a, .divideo a, .divideo p{
 .section5{
     background-image: url(../img/fondonegrohumo.png);
     background-size: cover;
-    object-fit: cover;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 .section5 h5{
     font-size: 20px;
-    object-fit: cover;
 }
 
 /** H3 SECTION 3**/
@@ -342,6 +357,14 @@ b, main a, .divideo a, .divideo p{
 @media screen and (max-width:1020px){
     .section3{
         flex-wrap:wrap;
+    }
+    .div4-3{
+        display: none;
+    }
+}
+@media screen and (max-width:840px){
+    .div4-3{
+        display: block;
     }
 }
 @media screen and (max-width:580px){
@@ -464,17 +487,15 @@ b, main a, .divideo a, .divideo p{
         flex-wrap: wrap;
         align-items: center;
     }
-}
-@media screen and (max-width:820px){
     .section4 div iframe{
-        width: 400px;
-        height: 300px;
+        width: 70vh;
+        height: 50vh;
     }
 }
 @media screen and (max-width:400px){
     .section4 div iframe{
-        width: 300px;
-        height: 200px;
+        width: 60vh;
+        height: 40vh;
     }
 }
 
