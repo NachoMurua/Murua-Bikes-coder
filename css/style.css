@@ -36,6 +36,12 @@ b, main a, .divideo a, .divideo p{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+.logo{
+    height: 65px;
+    width: 65px;
+}
+
+/* HEADER */
 
 .headcol{
     background-attachment: fixed;
