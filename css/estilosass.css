@@ -97,54 +97,60 @@ header {
     width: 190px; }
   .headcol .section4head .DropdownCarrito li a {
     font-size: 15px; }
-    .headcol .section4head .DropdownCarrito li a img {
-      width: 35px;
-      height: 35px; } }
+  .headcol .section4head .DropdownCarrito li img {
+    width: 35px;
+    height: 35px; } }
 
 @media screen and (max-width: 1035px) {
-  .headcol input {
-    width: 170px; }
   .headcol .logo {
     width: 40px;
-    height: 40px; } }
+    height: 40px; }
+  .headcol .section3head input {
+    width: 170px; } }
 
 @media screen and (max-width: 995px) {
-  .headcol a h1 {
-    font-size: 28px; }
-  .headcol input {
-    width: 130px; }
-  .headcol li a {
+  .headcol .section1head div a h1 {
+    font-size: 30px; }
+  .headcol .section2head nav ul li a {
     font-size: 12px; }
-  .headcol .perf {
+  .headcol .section3head input {
+    width: 130px; }
+  .headcol .section4head .DropdownCarrito li a {
+    font-size: 12px; }
+  .headcol .section4head .DropdownBurguer li a {
+    font-size: 12px; }
+  .headcol .section4head .perf a img {
     display: none; } }
 
 @media screen and (max-width: 920px) {
-  .headcol input {
-    display: none; }
-  .headcol li a {
-    font-size: 12px; } }
+  .headcol .section3head input {
+    display: none; } }
 
 @media screen and (max-width: 740px) {
-  .headcol a h1 {
+  .headcol .section1head div a h1 {
     font-size: 25px; }
-  .headcol li img {
+  .headcol .section4head .DropdownCarrito li a img {
     width: 25px;
     height: 25px; } }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 690px) {
   .headcol {
     justify-content: space-between; }
-  .DropdownCarrito {
-    display: none; }
-  .DropdownBurguer {
-    display: inline-block; }
-  .headcol .navlist {
-    display: none; }
-  .headcol .section1head {
-    padding-top: 15px; }
-  .headcol .logo {
-    margin-left: 10px;
-    margin-bottom: 10px; } }
+    .headcol .section1head {
+      padding-top: 15px; }
+      .headcol .section1head div a h1 {
+        font-size: 25px; }
+    .headcol .logo {
+      display: none; }
+    .headcol .section2head nav ul {
+      display: none; }
+    .headcol .section4head .DropdownCarrito {
+      display: none; }
+    .headcol .section4head .DropdownBurguer {
+      display: inline-block; }
+      .headcol .section4head .DropdownBurguer li a .burguer {
+        width: 25px;
+        height: 25px; } }
 
 /* INICIAR SESION */
 .iniciar-sesion {
@@ -159,18 +165,18 @@ header {
     border: 2px darkviolet double; }
 
 /*INICIO DE SESION MEDIA QUERY*/
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 690px) {
   .iniciar-sesion {
     display: flex;
     justify-content: center; }
-  .iniciar-sesion button {
-    transform: scale(1.07);
-    transition: 300ms;
-    object-fit: cover;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 8px;
-    border: 2px darkviolet double; } }
+    .iniciar-sesion button {
+      transform: scale(1.07);
+      transition: 300ms;
+      object-fit: cover;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 8px;
+      border: 2px darkviolet double; } }
 
 /* SECTION 1*/
 .main1 .section1 {
