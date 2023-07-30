@@ -124,23 +124,50 @@ header{
 /* MEDIA QUERY HEADER */
 
 @media screen and (max-width:1190px){
-    .headcol a h1{
-        font-size: 30px;
-    }
-    .headcol .logo{
+.headcol{
+    .section1head{
+        div{
+            a{
+                h1{
+                    font-size: 30px;
+                }
+            }
+        }
+    .logo{
         width: 55px;
         height: 55px;
+        }
     }
-    .headcol input{
-        width: 190px;
+    .section2head{
+        nav{
+            ul{
+                li{
+                    a{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
     }
-    .headcol li a{
-        font-size: 15px;
+    .section3head{
+        input{
+            width: 190px;
+        }
     }
-    .headcol a img{
-        width: 35px;
-        height: 35px;
+    .section4head{
+        .DropdownCarrito{
+            li{
+                a{
+                    font-size: 15px;
+                    img{
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
     }
+}
 }
 @media screen and (max-width:1035px){
     .headcol input{
@@ -271,7 +298,9 @@ header{
 }
 @media screen and (max-width:665px){
     .section1{
-        display: none;
+        img{
+            display: none;
+        }
     }
 }
 
