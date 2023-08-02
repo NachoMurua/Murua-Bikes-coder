@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: none !important;
+    list-style: none;
+    color: white !important;
+}
+
+header, footer, .cuadrado{
+    background-image: url(../img/violetafondo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+b, main a, .divideo a, .divideo p{
+    background-image: url(../img/violetafondoMAIN.png);
+}
+.cuadrado, .section3 div, .section4 .texto, .iniciar-sesion, section form .divmicuenta div, .main2 section div, .main3 div{
+    background-image: url(../img/fondonegro.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.cuadrado a:hover,.section3 div a:hover,.divideo,.divideo a:hover,.divmicuenta a:hover{
+    background-image: url(../img/neontarjeta.png);
+}
+main, .iniciar-sesion button{
+    background-image: url(../img/violetafondoMAIN2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

@@ -8,7 +8,7 @@
   list-style: none;
   color: white !important; }
 
-header, footer, .cuadrado, .section2head li:hover {
+header, footer, .cuadrado {
   background-image: url(../img/violetafondo.png);
   background-position: center;
   background-size: cover;
@@ -31,58 +31,6 @@ main, .iniciar-sesion button {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; }
-
-.logo {
-  height: 65px;
-  width: 65px; }
-
-/* HEADER */
-header {
-  background-attachment: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  header .section1head {
-    display: flex;
-    padding-left: 20px; }
-    header .section1head div a h1 {
-      font-size: 45px;
-      font-weight: 900%; }
-  header .logo {
-    width: 65px;
-    height: 65px; }
-  header .section2head nav ul li {
-    padding: 30px 40px 30px 40px;
-    display: inline-block; }
-  header .section3head input {
-    color: black !important;
-    border: 2px black solid;
-    padding: 10px;
-    border-radius: 20px;
-    width: 290px;
-    font-size: 15px; }
-  header .section4head {
-    display: flex; }
-    header .section4head .DropdownCarrito li {
-      color: black !important;
-      text-align: center; }
-      header .section4head .DropdownCarrito li a {
-        color: black !important; }
-        header .section4head .DropdownCarrito li a img {
-          height: 45px;
-          width: 45px;
-          margin-right: 25px; }
-    header .section4head .DropdownBurguer {
-      display: none; }
-      header .section4head .DropdownBurguer li {
-        color: black !important;
-        text-align: center; }
-        header .section4head .DropdownBurguer li a {
-          color: black !important; }
-    header .section4head .perf a img {
-      height: 45px;
-      width: 45px;
-      margin-right: 25px; }
 
 /* MEDIA QUERY HEADER */
 @media screen and (max-width: 1190px) {
@@ -152,18 +100,6 @@ header {
         width: 25px;
         height: 25px; } }
 
-/* INICIAR SESION */
-main .iniciar-sesion {
-  display: none; }
-  main .iniciar-sesion button {
-    transform: scale(1.07);
-    transition: 300ms;
-    object-fit: cover;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 8px;
-    border: 2px darkviolet double; }
-
 /*INICIO DE SESION MEDIA QUERY*/
 @media screen and (max-width: 690px) {
   main .iniciar-sesion {
@@ -178,19 +114,7 @@ main .iniciar-sesion {
       border-radius: 8px;
       border: 2px darkviolet double; } }
 
-/* SECTION 1*/
-main .section1 {
-  border-top: 2px black solid;
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
-  main .section1 img {
-    height: 75px;
-    width: 180px;
-    margin-top: 10px;
-    margin-bottom: 10px; }
-
-/* MEDIA QUERIES SECTION1 */
+/* MEDIA QUERIES SECTION 1 */
 @media screen and (max-width: 1100px) {
   main .section1 .img6 {
     display: none; } }
@@ -207,7 +131,164 @@ main .section1 {
   main .section1 img {
     display: none; } }
 
-/* SECTION 2 */
+/* MEDIA QUERIES SECTION 2 */
+@media screen and (max-width: 920px) {
+  main .section2hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    background-image: url(../img/Benellihero.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; }
+    main .section2hero .cuadrado {
+      text-align: center;
+      padding: 20px; }
+      main .section2hero .cuadrado div h2 {
+        margin-bottom: 10px; }
+      main .section2hero .cuadrado .ph2 {
+        margin-bottom: 25px; } }
+
+/* MEDIA QUERIES SECTION 3 */
+@media screen and (max-width: 1020px) {
+  main .section3 {
+    flex-wrap: wrap; }
+    main .section3 .div4-3 {
+      display: none; } }
+
+@media screen and (max-width: 839px) {
+  main .section3 .div4-3 {
+    display: block; } }
+
+@media screen and (max-width: 580px) {
+  main .section3 .div2-3, main .section3 .div3-3, main .section3 .div4-3 {
+    display: none; } }
+
+/* QUERIES SECTION 4*/
+@media screen and (max-width: 1250px) {
+  main .section4 .texto p {
+    font-size: 15px;
+    min-width: 320px; }
+  main .section4 div iframe {
+    flex-wrap: wrap;
+    width: 400px;
+    height: 350px; } }
+
+@media screen and (max-width: 1070px) {
+  main .section4 {
+    flex-wrap: wrap; }
+    main .section4 .texto p {
+      font-size: 15px;
+      min-width: 250px; }
+    main .section4 div iframe {
+      width: 600px;
+      height: 400px; } }
+
+@media screen and (max-width: 820px) {
+  main .section4 {
+    flex-wrap: wrap;
+    align-items: center; }
+    main .section4 div iframe {
+      width: 50vh;
+      height: 40vh; } }
+
+@media screen and (max-width: 400px) {
+  main .section4 .divideo {
+    width: 16rem;
+    height: 26rem; }
+  main .section4 div iframe {
+    width: 40vh;
+    height: 30vh; } }
+
+/* QUERY FOOTER */
+@media screen and (max-width: 815px) {
+  footer {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; }
+    footer .div1fot p {
+      text-align: center; }
+    footer .div1fot iframe {
+      width: 250px;
+      height: 150px; } }
+
+/* QUERY INICIAR SESION */
+@media screen and (max-width: 465px) {
+  main .form1 form .divmicuenta div h1 {
+    text-align: center; } }
+
+/* HEADER */
+header {
+  background-attachment: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  header .section1head {
+    display: flex;
+    padding-left: 20px; }
+    header .section1head div a h1 {
+      font-size: 45px;
+      font-weight: 900%; }
+  header .logo {
+    width: 65px;
+    height: 65px; }
+  header .section2head nav ul li {
+    padding: 30px 40px 20px 40px;
+    display: inline-block; }
+  header .section3head input {
+    color: black !important;
+    border: 2px black solid;
+    padding: 10px;
+    border-radius: 20px;
+    width: 290px;
+    font-size: 15px; }
+  header .section4head {
+    display: flex; }
+    header .section4head .DropdownCarrito li {
+      color: black !important;
+      text-align: center; }
+      header .section4head .DropdownCarrito li a {
+        color: black !important; }
+        header .section4head .DropdownCarrito li a img {
+          height: 45px;
+          width: 45px;
+          margin-right: 25px; }
+    header .section4head .DropdownBurguer {
+      display: none; }
+      header .section4head .DropdownBurguer li {
+        color: black !important;
+        text-align: center; }
+        header .section4head .DropdownBurguer li a {
+          color: black !important; }
+    header .section4head .perf a img {
+      height: 45px;
+      width: 45px;
+      margin-right: 25px; }
+
+/* INICIAR SESION APARECE EN MEDIA QUERY*/
+main .iniciar-sesion {
+  display: none; }
+  main .iniciar-sesion button {
+    transform: scale(1.07);
+    transition: 300ms;
+    object-fit: cover;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 2px darkviolet double; }
+
+/* SECTION 1 */
+main .section1 {
+  border-top: 2px black solid;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  main .section1 img {
+    height: 75px;
+    width: 180px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+/* SECTION 2 HERO */
 .section2hero {
   background-image: url(../img/benelli302s.png);
   background-position: center;
@@ -238,23 +319,6 @@ main .section1 {
       border-radius: 10px;
       border: 2px darkviolet solid; }
 
-/* MEDIA QUERIES SECTION 2 */
-@media screen and (max-width: 920px) {
-  main .section2hero {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr;
-    background-image: url(../img/Benellihero.png);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed; }
-    main .section2hero .cuadrado {
-      text-align: center;
-      padding: 20px; }
-      main .section2hero .cuadrado div h2 {
-        margin-bottom: 10px; }
-      main .section2hero .cuadrado .ph2 {
-        margin-bottom: 25px; } }
-
 /* SECTION CARROUSEL*/
 .section5 {
   background-image: url(../img/fondonegrohumo.png);
@@ -264,7 +328,7 @@ main .section1 {
   .section5 div div div h5 {
     font-size: 20px; }
 
-/* H3 SECTION 3 */
+/* SECTION 3 + H3 SECTION*/
 .h3section {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -274,7 +338,6 @@ main .section1 {
   border-bottom: 6px white double;
   text-align: center; }
 
-/* SECTION 3 */
 .section3 {
   display: flex;
   justify-content: space-around;
@@ -309,22 +372,7 @@ main .section1 {
       border-radius: 10px;
       border: 2px darkviolet solid; }
 
-/* MEDIA QUERIES SECTION 3 */
-@media screen and (max-width: 1020px) {
-  main .section3 {
-    flex-wrap: wrap; }
-    main .section3 .div4-3 {
-      display: none; } }
-
-@media screen and (max-width: 839px) {
-  main .section3 .div4-3 {
-    display: block; } }
-
-@media screen and (max-width: 580px) {
-  main .section3 .div2-3, main .section3 .div3-3, main .section3 .div4-3 {
-    display: none; } }
-
-/*H4 SECTION 4 */
+/* SECTION 4 + H4 SECTION */
 section .h4section {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -334,7 +382,6 @@ section .h4section {
   border-bottom: 6px white double;
   text-align: center; }
 
-/* SECTION 4 */
 .section4 {
   display: flex;
   justify-content: space-around;
@@ -394,41 +441,36 @@ section .h4section {
       transition: 300ms;
       object-fit: cover; }
 
-/* QUERIES SECTION 4*/
-@media screen and (max-width: 1250px) {
-  main .section4 .texto p {
-    font-size: 15px;
-    min-width: 320px; }
-  main .section4 div iframe {
-    flex-wrap: wrap;
-    width: 400px;
-    height: 350px; } }
-
-@media screen and (max-width: 1070px) {
-  main .section4 {
-    flex-wrap: wrap; }
-    main .section4 .texto p {
-      font-size: 15px;
-      min-width: 250px; }
-    main .section4 div iframe {
-      width: 600px;
-      height: 400px; } }
-
-@media screen and (max-width: 820px) {
-  main .section4 {
-    flex-wrap: wrap;
-    align-items: center; }
-    main .section4 div iframe {
-      width: 50vh;
-      height: 40vh; } }
-
-@media screen and (max-width: 400px) {
-  main .section4 .divideo {
-    width: 16rem;
-    height: 26rem; }
-  main .section4 div iframe {
-    width: 40vh;
-    height: 30vh; } }
+/* MI CUENTA (INICIO DE SESION) */
+main .form1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black; }
+  main .form1 form .divmicuenta div {
+    display: grid;
+    padding: 50px;
+    border: 2px white solid; }
+  main .form1 form .divmicuenta h1 {
+    margin-bottom: 15px; }
+  main .form1 form .divmicuenta label {
+    text-align: center;
+    margin-bottom: 5px; }
+  main .form1 form .divmicuenta input {
+    color: black !important;
+    margin-bottom: 15px;
+    background-color: white;
+    border: 2px darkviolet  solid;
+    padding: 10px; }
+  main .form1 form .divmicuenta a {
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    border: 2px darkviolet  solid;
+    margin-top: 20px;
+    text-align: center; }
 
 /* FOOTER */
 footer {
@@ -470,51 +512,3 @@ footer {
     margin: 15px;
     width: 35px;
     height: 35px; }
-
-/* QUERYS FOOTER */
-@media screen and (max-width: 815px) {
-  footer {
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center; }
-    footer .div1fot p {
-      text-align: center; }
-    footer .div1fot iframe {
-      width: 250px;
-      height: 150px; } }
-
-/* MI CUENTA */
-main .form1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black; }
-  main .form1 form .divmicuenta div {
-    display: grid;
-    padding: 50px;
-    border: 2px white solid; }
-  main .form1 form .divmicuenta h1 {
-    margin-bottom: 15px; }
-  main .form1 form .divmicuenta label {
-    text-align: center;
-    margin-bottom: 5px; }
-  main .form1 form .divmicuenta input {
-    color: black !important;
-    margin-bottom: 15px;
-    background-color: white;
-    border: 2px darkviolet  solid;
-    padding: 10px; }
-  main .form1 form .divmicuenta a {
-    padding: 10px;
-    border-radius: 10px;
-    display: inline-block;
-    border: 2px darkviolet  solid;
-    margin-top: 20px;
-    text-align: center; }
-
-/* QUERY INICIAR SESION */
-@media screen and (max-width: 465px) {
-  main .form1 form .divmicuenta div h1 {
-    text-align: center; } }

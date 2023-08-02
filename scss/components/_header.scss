@@ -1,0 +1,80 @@
+/* HEADER */
+
+header{
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .section1head{
+        display: flex;
+        padding-left: 20px;
+        div{
+            a{
+                h1{
+                    font-size: 45px;
+                    font-weight: 900%;
+                }
+            }
+        }
+    }
+    .logo{
+        width:65px;
+        height:65px;
+    }
+    .section2head{
+        nav{
+            ul{
+                li{
+                    padding: 30px 40px 20px 40px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .section3head{
+        input{
+            color: black !important;
+            border: 2px black solid;
+            padding: 10px;
+            border-radius: 20px;
+            width: 290px;
+            font-size: 15px;
+        }
+    }
+    .section4head{
+        display: flex;
+        .DropdownCarrito{
+            li{
+                color: black !important;
+                text-align: center;
+                a{
+                    color: black !important;
+                    img{
+                        height: 45px;
+                        width: 45px;
+                        margin-right: 25px;
+                    }
+                }
+            }
+        }
+        .DropdownBurguer{
+            display: none;
+            li{
+                color: black !important;
+                text-align: center;
+                a{
+                    color: black !important;
+                }
+            }
+        }
+        .perf{
+            a{
+                img{
+                    height: 45px;
+                    width: 45px;
+                    margin-right: 25px;
+                }
+            }
+        }
+    }
+}
