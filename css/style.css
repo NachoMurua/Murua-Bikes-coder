@@ -285,12 +285,6 @@ b, main a, .divideo a, .divideo p{
         margin-bottom: 25px;
     }
 }
-@media screen and (max-width:550px){
-    .section2hero{
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 0.8fr;
-    }
-}
 /* SECTION CARROUSEL*/
 .section5{
     background-image: url(../img/fondonegrohumo.png);
