@@ -1,4 +1,305 @@
+/* HEADER */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+header {
+  background-attachment: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  header .section1head {
+    display: flex;
+    padding-left: 20px; }
+    header .section1head div a h1 {
+      font-size: 45px;
+      font-weight: 900%; }
+  header .logo {
+    width: 65px;
+    height: 65px; }
+  header .section2head nav ul li {
+    padding: 30px 40px 20px 40px;
+    display: inline-block; }
+    header .section2head nav ul li:hover {
+      transform: scale(1.1);
+      transition: 200ms;
+      background-color: black; }
+  header .section3head input {
+    color: black !important;
+    border: 2px black solid;
+    padding: 10px;
+    border-radius: 20px;
+    width: 290px;
+    font-size: 15px; }
+  header .section4head {
+    display: flex; }
+    header .section4head .DropdownCarrito li {
+      color: black !important;
+      text-align: center; }
+      header .section4head .DropdownCarrito li a {
+        color: black !important; }
+        header .section4head .DropdownCarrito li a img {
+          height: 45px;
+          width: 45px;
+          margin-right: 25px; }
+    header .section4head .DropdownBurguer {
+      display: none; }
+      header .section4head .DropdownBurguer li {
+        color: black !important;
+        text-align: center; }
+        header .section4head .DropdownBurguer li a {
+          color: black !important; }
+    header .section4head .perf a img {
+      height: 45px;
+      width: 45px;
+      margin-right: 25px; }
+
+/* INICIAR SESION APARECE EN MEDIA QUERY*/
+main .iniciar-sesion {
+  display: none; }
+  main .iniciar-sesion button {
+    transform: scale(1.07);
+    transition: 300ms;
+    object-fit: cover;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 2px darkviolet double; }
+
+/* SECTION 1 */
+main .section1 {
+  border-top: 2px black solid;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  main .section1 img {
+    height: 75px;
+    width: 180px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    main .section1 img:hover {
+      transform: scale(1.1);
+      transition: 200ms; }
+
+/* SECTION 2 HERO */
+.section2hero {
+  background-image: url(../img/benelli302s.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  grid-template-rows: 1fr;
+  letter-spacing: 1px; }
+  .section2hero .cuadrado {
+    padding: 70px;
+    border: 2px black solid;
+    align-items: center; }
+    .section2hero .cuadrado div h2 {
+      font-size: 35px;
+      margin-bottom: 30px; }
+    .section2hero .cuadrado div h3 {
+      margin-bottom: 15px;
+      font-size: 25px; }
+    .section2hero .cuadrado .ph1 {
+      font-size: 17px;
+      margin-bottom: 15px; }
+    .section2hero .cuadrado .ph2 {
+      font-size: 17px;
+      margin-bottom: 45px; }
+    .section2hero .cuadrado div a {
+      padding: 15px;
+      border-radius: 10px;
+      border: 2px darkviolet solid; }
+
+/* SECTION CARROUSEL*/
+.sectionCarrousel {
+  background-image: url(../img/fondonegrohumo.png);
+  background-size: cover;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  .sectionCarrousel div div div h5 {
+    font-size: 20px; }
+
+/* SECTION 3 + H3 SECTION*/
+.h3section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 25px;
+  background-color: black;
+  border-top: 6px white double;
+  border-bottom: 6px white double;
+  text-align: center; }
+
+.section3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .section3 div {
+    border: 2px darkviolet solid;
+    border-radius: 8px;
+    margin: 20px;
+    width: 15rem;
+    height: 24rem;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px; }
+    .section3 div:hover {
+      transform: scale(1.07);
+      transition: 300ms;
+      object-fit: cover; }
+    .section3 div img {
+      height: 200px;
+      width: 200px;
+      margin-bottom: 10px;
+      border: 2px black solid;
+      border-radius: 8px; }
+    .section3 div h3 {
+      border: 2px darkviolet  double;
+      margin-top: 15px;
+      margin-bottom: 20px;
+      padding: 6px;
+      border-radius: 10px; }
+    .section3 div a {
+      padding: 8px;
+      border-radius: 10px;
+      border: 2px darkviolet solid; }
+
+/* SECTION 4 + H4 SECTION */
+section .h4section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 25px;
+  background-color: black;
+  border-top: 6px white double;
+  border-bottom: 6px white double;
+  text-align: center; }
+
+.section4 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid black; }
+  .section4 .divideo {
+    border-radius: 8px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    text-align: center;
+    width: 16rem;
+    height: 26rem;
+    padding: 15px;
+    margin: 20px 20px 20px 30px; }
+    .section4 .divideo:hover {
+      transform: scale(1.1);
+      transition: 300ms;
+      object-fit: cover; }
+    .section4 .divideo h4 {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background-color: black;
+      text-align: center;
+      letter-spacing: 1px; }
+    .section4 .divideo img {
+      height: 220px;
+      width: 220px;
+      border: 2px black solid;
+      border-radius: 8px; }
+    .section4 .divideo h3 {
+      background-color: black;
+      margin-top: 15px;
+      margin-bottom: 25px;
+      padding: 6px;
+      border-radius: 8px;
+      font-size: 25px; }
+    .section4 .divideo a {
+      padding: 10px;
+      border-radius: 10px;
+      border: 2px darkviolet solid;
+      background-color: black; }
+      .section4 .divideo a:hover {
+        background-image: url(../img/neontarjeta.png); }
+  .section4 .texto p {
+    text-align: center;
+    margin: 20px;
+    letter-spacing: 1px;
+    font-size: 20px; }
+  .section4 div iframe {
+    width: 500px;
+    height: 350px;
+    margin: 20px 30px 20px 20px; }
+    .section4 div iframe:hover {
+      transform: scale(1.05);
+      transition: 300ms;
+      object-fit: cover; }
+
+/* MI CUENTA (INICIO DE SESION) */
+main .form1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black; }
+  main .form1 form .divmicuenta div {
+    display: grid;
+    padding: 50px;
+    border: 2px white solid; }
+  main .form1 form .divmicuenta h1 {
+    margin-bottom: 15px; }
+  main .form1 form .divmicuenta label {
+    text-align: center;
+    margin-bottom: 5px; }
+  main .form1 form .divmicuenta input {
+    color: black !important;
+    margin-bottom: 15px;
+    background-color: white;
+    border: 2px darkviolet  solid;
+    padding: 10px; }
+  main .form1 form .divmicuenta a {
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    border: 2px darkviolet  solid;
+    margin-top: 20px;
+    text-align: center; }
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  footer .div1fot {
+    padding: 30px;
+    font-size: 20px; }
+    footer .div1fot iframe {
+      width: 300px;
+      height: 170px; }
+  footer .div2fot ul {
+    display: inline-block;
+    padding-top: 10px; }
+    footer .div2fot ul li {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 15px; }
+  footer .div3fot ul {
+    display: inline-block;
+    padding: 20px; }
+    footer .div3fot ul li:hover {
+      transform: scale(1.1);
+      transition: 300ms;
+      object-fit: cover; }
+    footer .div3fot ul li a img {
+      margin: 15px;
+      width: 35px;
+      height: 35px; }
+  footer .div3fot ul li:hover {
+    transform: scale(1.1);
+    transition: 300ms;
+    object-fit: cover; }
+  footer .div3fot ul img {
+    margin: 15px;
+    width: 35px;
+    height: 35px; }
+
 * {
   padding: 0;
   margin: 0;
@@ -215,300 +516,3 @@ main, .iniciar-sesion button {
 @media screen and (max-width: 465px) {
   main .form1 form .divmicuenta div h1 {
     text-align: center; } }
-
-/* HEADER */
-header {
-  background-attachment: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  header .section1head {
-    display: flex;
-    padding-left: 20px; }
-    header .section1head div a h1 {
-      font-size: 45px;
-      font-weight: 900%; }
-  header .logo {
-    width: 65px;
-    height: 65px; }
-  header .section2head nav ul li {
-    padding: 30px 40px 20px 40px;
-    display: inline-block; }
-  header .section3head input {
-    color: black !important;
-    border: 2px black solid;
-    padding: 10px;
-    border-radius: 20px;
-    width: 290px;
-    font-size: 15px; }
-  header .section4head {
-    display: flex; }
-    header .section4head .DropdownCarrito li {
-      color: black !important;
-      text-align: center; }
-      header .section4head .DropdownCarrito li a {
-        color: black !important; }
-        header .section4head .DropdownCarrito li a img {
-          height: 45px;
-          width: 45px;
-          margin-right: 25px; }
-    header .section4head .DropdownBurguer {
-      display: none; }
-      header .section4head .DropdownBurguer li {
-        color: black !important;
-        text-align: center; }
-        header .section4head .DropdownBurguer li a {
-          color: black !important; }
-    header .section4head .perf a img {
-      height: 45px;
-      width: 45px;
-      margin-right: 25px; }
-
-/* INICIAR SESION APARECE EN MEDIA QUERY*/
-main .iniciar-sesion {
-  display: none; }
-  main .iniciar-sesion button {
-    transform: scale(1.07);
-    transition: 300ms;
-    object-fit: cover;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 8px;
-    border: 2px darkviolet double; }
-
-/* SECTION 1 */
-main .section1 {
-  border-top: 2px black solid;
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
-  main .section1 img {
-    height: 75px;
-    width: 180px;
-    margin-top: 10px;
-    margin-bottom: 10px; }
-
-/* SECTION 2 HERO */
-.section2hero {
-  background-image: url(../img/benelli302s.png);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  display: grid;
-  grid-template-columns: 0.8fr 1fr;
-  grid-template-rows: 1fr;
-  letter-spacing: 1px; }
-  .section2hero .cuadrado {
-    padding: 70px;
-    border: 2px black solid;
-    align-items: center; }
-    .section2hero .cuadrado div h2 {
-      font-size: 35px;
-      margin-bottom: 30px; }
-    .section2hero .cuadrado div h3 {
-      margin-bottom: 15px;
-      font-size: 25px; }
-    .section2hero .cuadrado .ph1 {
-      font-size: 17px;
-      margin-bottom: 15px; }
-    .section2hero .cuadrado .ph2 {
-      font-size: 17px;
-      margin-bottom: 45px; }
-    .section2hero .cuadrado div a {
-      padding: 15px;
-      border-radius: 10px;
-      border: 2px darkviolet solid; }
-
-/* SECTION CARROUSEL*/
-.section5 {
-  background-image: url(../img/fondonegrohumo.png);
-  background-size: cover;
-  margin-top: 15px;
-  margin-bottom: 15px; }
-  .section5 div div div h5 {
-    font-size: 20px; }
-
-/* SECTION 3 + H3 SECTION*/
-.h3section {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 25px;
-  background-color: black;
-  border-top: 6px white double;
-  border-bottom: 6px white double;
-  text-align: center; }
-
-.section3 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
-  .section3 div {
-    border: 2px darkviolet solid;
-    border-radius: 8px;
-    margin: 20px;
-    width: 15rem;
-    height: 24rem;
-    padding: 10px;
-    text-align: center;
-    font-size: 20px; }
-    .section3 div:hover {
-      transform: scale(1.07);
-      transition: 300ms;
-      object-fit: cover; }
-    .section3 div img {
-      height: 200px;
-      width: 200px;
-      margin-bottom: 10px;
-      border: 2px black solid;
-      border-radius: 8px; }
-    .section3 div h3 {
-      border: 2px darkviolet  double;
-      margin-top: 15px;
-      margin-bottom: 20px;
-      padding: 6px;
-      border-radius: 10px; }
-    .section3 div a {
-      padding: 8px;
-      border-radius: 10px;
-      border: 2px darkviolet solid; }
-
-/* SECTION 4 + H4 SECTION */
-section .h4section {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 25px;
-  background-color: black;
-  border-top: 6px white double;
-  border-bottom: 6px white double;
-  text-align: center; }
-
-.section4 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-bottom: 2px solid black; }
-  .section4 .divideo {
-    border-radius: 8px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-size: 20px;
-    text-align: center;
-    width: 16rem;
-    height: 26rem;
-    padding: 15px;
-    margin: 20px 20px 20px 30px; }
-    .section4 .divideo:hover {
-      transform: scale(1.09);
-      transition: 300ms;
-      object-fit: cover; }
-    .section4 .divideo h4 {
-      padding-top: 5px;
-      padding-bottom: 5px;
-      background-color: black;
-      text-align: center;
-      letter-spacing: 1px; }
-    .section4 .divideo img {
-      height: 220px;
-      width: 220px;
-      border: 2px black solid;
-      border-radius: 8px; }
-    .section4 .divideo h3 {
-      background-color: black;
-      margin-top: 15px;
-      margin-bottom: 25px;
-      padding: 6px;
-      border-radius: 8px;
-      font-size: 25px; }
-    .section4 .divideo a {
-      padding: 10px;
-      border-radius: 10px;
-      border: 2px darkviolet solid;
-      background-color: black; }
-      .section4 .divideo a:hover {
-        background-image: url(../img/neontarjeta.png); }
-  .section4 .texto p {
-    text-align: center;
-    margin: 20px;
-    letter-spacing: 1px;
-    font-size: 20px; }
-  .section4 div iframe {
-    width: 500px;
-    height: 350px;
-    margin: 20px 30px 20px 20px; }
-    .section4 div iframe:hover {
-      transform: scale(1.05);
-      transition: 300ms;
-      object-fit: cover; }
-
-/* MI CUENTA (INICIO DE SESION) */
-main .form1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black; }
-  main .form1 form .divmicuenta div {
-    display: grid;
-    padding: 50px;
-    border: 2px white solid; }
-  main .form1 form .divmicuenta h1 {
-    margin-bottom: 15px; }
-  main .form1 form .divmicuenta label {
-    text-align: center;
-    margin-bottom: 5px; }
-  main .form1 form .divmicuenta input {
-    color: black !important;
-    margin-bottom: 15px;
-    background-color: white;
-    border: 2px darkviolet  solid;
-    padding: 10px; }
-  main .form1 form .divmicuenta a {
-    padding: 10px;
-    border-radius: 10px;
-    display: inline-block;
-    border: 2px darkviolet  solid;
-    margin-top: 20px;
-    text-align: center; }
-
-/* FOOTER */
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  footer .div1fot {
-    padding: 30px;
-    font-size: 20px; }
-    footer .div1fot iframe {
-      width: 300px;
-      height: 170px; }
-      footer .div1fot iframe:hover {
-        transform: scale(1.1);
-        transition: 200ms; }
-  footer .div2fot ul {
-    display: inline-block;
-    padding-top: 10px; }
-    footer .div2fot ul li {
-      text-align: center;
-      font-size: 18px;
-      margin-bottom: 15px; }
-  footer .div3fot ul {
-    display: inline-block;
-    padding: 20px; }
-    footer .div3fot ul li:hover {
-      transform: scale(1.1);
-      transition: 300ms;
-      object-fit: cover; }
-    footer .div3fot ul li a img {
-      margin: 15px;
-      width: 35px;
-      height: 35px; }
-  footer .div3fot ul li:hover {
-    transform: scale(1.1);
-    transition: 300ms;
-    object-fit: cover; }
-  footer .div3fot ul img {
-    margin: 15px;
-    width: 35px;
-    height: 35px; }
