@@ -13,6 +13,7 @@ header{
                 h1{
                     font-size: 45px;
                     font-weight: 900%;
+                    margin-top: 10px;
                 }
             }
         }
@@ -24,13 +25,14 @@ header{
     .section2head{
         nav{
             ul{
+                margin-bottom: 4px;
                 li{
-                    padding: 30px 40px 20px 40px;
+                    padding: 30px 40px 25px 40px;
                     display: inline-block;
                     &:hover{
                         transform: scale(1.10);
                         transition: 200ms;
-                        background-color: black;
+                        background-image: url(../img/violetafondo.png);
                     }
                 }
             }
@@ -78,6 +80,7 @@ header{
                     height: 45px;
                     width: 45px;
                     margin-right: 25px;
+                    margin-top: 8px;
                 }
             }
         }

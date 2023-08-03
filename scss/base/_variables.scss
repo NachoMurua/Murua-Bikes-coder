@@ -1,0 +1,25 @@
+/* LISTAS */
+
+
+
+/* EXTEND */ 
+
+%flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+%efectos{
+    transform: scale(1.08);
+    transition: 300ms;
+    object-fit: cover;
+}
+
+/* MIXIN */ 
+
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

@@ -21,20 +21,14 @@ main{
 main{
     .section1{
         border-top: 2px black solid;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        @extend %flex;
         img{
             height: 75px;
             width: 180px;
             margin-top: 10px;
             margin-bottom: 10px;
-            &:hover{
-                transform: scale(1.10);
-                transition: 200ms;
         }
     }
-}
 }
 /* SECTION 2 HERO */
 
@@ -114,9 +108,7 @@ main{
 }
 
 .section3{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @extend %flex;
     div{
         border: 2px darkviolet solid;
         border-radius: 8px;
@@ -127,9 +119,7 @@ main{
         text-align: center;
         font-size: 20px;
         &:hover{
-            transform: scale(1.07);
-            transition: 300ms;
-            object-fit: cover;
+            @extend %efectos;
         }
         img{
             height: 200px;
@@ -169,9 +159,7 @@ section{
 }
 
 .section4{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @extend %flex;
     border-bottom: 2px solid black;
     .divideo{
         border-radius: 8px;
@@ -185,9 +173,7 @@ section{
         padding: 15px;
         margin: 20px 20px 20px 30px;
         &:hover{
-            transform: scale(1.10);
-            transition: 300ms;
-            object-fit: cover;
+            @extend %efectos;
         }
         h4{
             padding-top: 5px;
@@ -234,9 +220,7 @@ section{
             height: 350px;
             margin: 20px 30px 20px 20px;
             &:hover{
-                transform: scale(1.05);
-                transition: 300ms;
-                object-fit: cover;
+                @extend %efectos;
             }
         }
     }
