@@ -52,25 +52,37 @@ header{
         display: flex;
         .DropdownCarrito{
             li{
-                color: black !important;
                 text-align: center;
                 a{
-                    color: black !important;
+                    color: white !important;
                     img{
                         height: 45px;
                         width: 45px;
-                        margin-right: 25px;
+                        margin-right: 30px;
                     }
+                }
+                .dropdown-menu{
+                    background-image: url(../img/fondonegro.jpg) ;
+                }
+                li{
+                    color: white !important;
                 }
             }
         }
         .DropdownBurguer{
             display: none;
             li{
-                color: black !important;
                 text-align: center;
                 a{
-                    color: black !important;
+                    color: white !important;
+                }
+                .dropdown-menu{
+                    background-image: url(../img/violetafondoMAIN2.png) ;
+                }
+                li{
+                    a{
+                        color: white !important;
+                    }
                 }
             }
         }
@@ -83,6 +95,7 @@ header{
                     margin-top: 8px;
                 }
             }
+            
         }
     }
 }

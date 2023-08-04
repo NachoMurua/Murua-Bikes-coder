@@ -34,21 +34,27 @@ header {
   header .section4head {
     display: flex; }
     header .section4head .DropdownCarrito li {
-      color: black !important;
       text-align: center; }
       header .section4head .DropdownCarrito li a {
-        color: black !important; }
+        color: white !important; }
         header .section4head .DropdownCarrito li a img {
           height: 45px;
           width: 45px;
-          margin-right: 25px; }
+          margin-right: 30px; }
+      header .section4head .DropdownCarrito li .dropdown-menu {
+        background-image: url(../img/fondonegro.jpg); }
+      header .section4head .DropdownCarrito li li {
+        color: white !important; }
     header .section4head .DropdownBurguer {
       display: none; }
       header .section4head .DropdownBurguer li {
-        color: black !important;
         text-align: center; }
         header .section4head .DropdownBurguer li a {
-          color: black !important; }
+          color: white !important; }
+        header .section4head .DropdownBurguer li .dropdown-menu {
+          background-image: url(../img/violetafondoMAIN2.png); }
+        header .section4head .DropdownBurguer li li a {
+          color: white !important; }
     header .section4head .perf a img {
       height: 45px;
       width: 45px;
@@ -69,12 +75,21 @@ main .iniciar-sesion {
 
 /* SECTION 1 */
 main .section1 {
-  border-top: 2px black solid; }
-  main .section1 img {
-    height: 75px;
-    width: 180px;
-    margin-top: 10px;
-    margin-bottom: 10px; }
+  border-top: 2px solid black;
+  height: auto;
+  margin: auto;
+  overflow: hidden; }
+  main .section1 .slider {
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 12); }
+    main .section1 .slider .slide {
+      width: 180px; }
+      main .section1 .slider .slide img {
+        width: 100%; }
+        main .section1 .slider .slide img:hover {
+          transform: scale(1.1);
+          transition: 300ms; }
 
 /* SECTION 2 HERO */
 .section2hero {
@@ -106,6 +121,8 @@ main .section1 {
       padding: 15px;
       border-radius: 10px;
       border: 2px darkviolet solid; }
+      .section2hero .cuadrado div a:hover {
+        border: 2px #c77dff solid; }
 
 /* SECTION CARROUSEL*/
 .sectionCarrousel {
@@ -135,6 +152,8 @@ main .section1 {
   padding: 10px;
   text-align: center;
   font-size: 20px; }
+  .section3 div:hover {
+    border: 3px #c77dff solid; }
   .section3 div img {
     height: 200px;
     width: 200px;
@@ -142,7 +161,7 @@ main .section1 {
     border: 2px black solid;
     border-radius: 8px; }
   .section3 div h3 {
-    border: 2px darkviolet  double;
+    border: 2px darkviolet double;
     margin-top: 15px;
     margin-bottom: 20px;
     padding: 6px;
@@ -151,6 +170,8 @@ main .section1 {
     padding: 8px;
     border-radius: 10px;
     border: 2px darkviolet solid; }
+    .section3 div a:hover {
+      border: 2px #c77dff solid; }
 
 /* SECTION 4 + H4 SECTION */
 section .h4section {
@@ -175,6 +196,8 @@ section .h4section {
     height: 26rem;
     padding: 15px;
     margin: 20px 20px 20px 30px; }
+    .section4 .divideo:hover {
+      border: 3px #c77dff solid; }
     .section4 .divideo h4 {
       padding-top: 5px;
       padding-bottom: 5px;
@@ -199,7 +222,8 @@ section .h4section {
       border: 2px darkviolet solid;
       background-color: black; }
       .section4 .divideo a:hover {
-        background-image: url(../img/neontarjeta.png); }
+        background-image: url(../img/neontarjeta.png);
+        border: 2px #c77dff solid; }
   .section4 .texto p {
     text-align: center;
     margin: 20px;
@@ -306,7 +330,7 @@ main, .iniciar-sesion button {
 
 /* LISTAS */
 /* EXTEND */
-main .section1, .section3, .section4 {
+main .section1 .slider, .section3, .section4 {
   display: flex;
   justify-content: space-around;
   align-items: center; }
@@ -317,6 +341,14 @@ main .section1, .section3, .section4 {
   object-fit: cover; }
 
 /* MIXIN */
+/* Animaciones */
+@keyframes scroll {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(calc(-180px * 6));
+    -webkit-transform: translateX(calc(-180px * 6)); } }
+
 /* MEDIA QUERY HEADER */
 @media screen and (max-width: 1190px) {
   header .section1head div a h1 {
@@ -400,19 +432,7 @@ main .section1, .section3, .section4 {
       border: 2px darkviolet double; } }
 
 /* MEDIA QUERIES SECTION 1 */
-@media screen and (max-width: 1100px) {
-  main .section1 .img6 {
-    display: none; } }
-
-@media screen and (max-width: 950px) {
-  main .section1 .img5 {
-    display: none; } }
-
-@media screen and (max-width: 765px) {
-  main .section1 .img4 {
-    display: none; } }
-
-@media screen and (max-width: 665px) {
+@media screen and (max-width: 690px) {
   main .section1 img {
     display: none; } }
 

@@ -20,16 +20,29 @@ main{
 
 main{
     .section1{
-        border-top: 2px black solid;
-        @extend %flex;
-        img{
-            height: 75px;
-            width: 180px;
-            margin-top: 10px;
-            margin-bottom: 10px;
+        border-top: 2px solid black;
+        height: auto;
+        margin: auto;
+        overflow: hidden;
+        .slider{
+            @extend %flex;
+            animation: scroll 40s linear infinite;
+            -webkit-animation: scroll 40s linear infinite;
+            width: calc(200px * 12);
+            .slide{
+                width: 180px;
+                img{
+                    width: 100%;
+                    &:hover{
+                        transform: scale(1.10);
+                        transition: 300ms;
+                    }
+                }
+            }
         }
     }
 }
+
 /* SECTION 2 HERO */
 
 .section2hero{
@@ -68,6 +81,9 @@ main{
                 padding: 15px;
                 border-radius: 10px;
                 border: 2px darkviolet solid;
+                &:hover{
+                border: 2px #c77dff solid;
+                }
             }
         }
     }
@@ -120,6 +136,7 @@ main{
         font-size: 20px;
         &:hover{
             @extend %efectos;
+            border: 3px #c77dff solid;
         }
         img{
             height: 200px;
@@ -131,7 +148,7 @@ main{
         p{
         }
         h3{
-            border: 2px darkviolet  double;
+            border: 2px darkviolet double;
             margin-top: 15px;
             margin-bottom: 20px;
             padding: 6px;
@@ -141,6 +158,9 @@ main{
             padding: 8px;
             border-radius: 10px;
             border: 2px darkviolet solid;
+            &:hover{
+                border: 2px #c77dff solid;
+            }
         }
     }
 }
@@ -174,6 +194,7 @@ section{
         margin: 20px 20px 20px 30px;
         &:hover{
             @extend %efectos;
+            border: 3px #c77dff solid;
         }
         h4{
             padding-top: 5px;
@@ -203,6 +224,7 @@ section{
             background-color: black;
             &:hover{
                 background-image: url(../img/neontarjeta.png);
+                border: 2px #c77dff solid;
             }
         }
     }
