@@ -10,8 +10,6 @@ main{
             margin: 10px;
             border-radius: 8px;
             border: 2px darkviolet double;
-            a{
-            }
         }
     }
 }
@@ -97,13 +95,9 @@ main{
     margin-bottom: 15px;
     div{
         div{
-        }
-        div{
             div{
-                h5{
+                h4{
                     font-size: 20px;
-                }
-                p{
                 }
             }
         }
@@ -115,7 +109,6 @@ main{
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 25px;
-    background-color: black;
     border-top: 6px white double;
     border-bottom: 6px white double;
 }
@@ -141,9 +134,8 @@ main{
             border: 2px black solid;
             border-radius: 8px;
         }
-        p{
-        }
         h3{
+            font-size: 20px;
             border: 2px darkviolet double;
             margin-top: 15px;
             margin-bottom: 20px;
@@ -167,7 +159,6 @@ section{
         padding-top: 10px;
         padding-bottom: 10px;
         font-size: 25px;
-        background-color: black;
         border-top: 6px white double;
         border-bottom: 6px white double;
     }
@@ -193,7 +184,6 @@ section{
         h4{
             padding-top: 5px;
             padding-bottom: 5px;
-            background-color: black;
             letter-spacing: 1px;
         }
         img{
@@ -203,7 +193,6 @@ section{
             border-radius: 8px;
         }
         h3{
-            background-color: black;
             margin-top: 15px;
             margin-bottom: 25px;
             padding: 6px;
@@ -214,7 +203,6 @@ section{
             padding: 10px;
             border-radius: 10px;
             border: 2px darkviolet solid;
-            background-color: black;
             &:hover{
                 background-image: url(../img/neontarjeta.png);
                 border: 2px #c77dff solid;

@@ -5,13 +5,24 @@ black,
 white,
 darkviolet;
 
+.h3section, .h4section, .h4section h3, .h4section h4, .divideo a{
+    background-color: nth($colores, 1);
+}
 
 $fuentes:
 12px,
 15px,
 20px,
-30px;
+30px,
+45px;
 
+.div1fot{
+    font-size: nth($fuentes, 3);
+}
+
+.section1head h1{
+    font-size: nth($fuentes, 5);
+}
 
 /* EXTEND */ 
 
@@ -53,8 +64,26 @@ header{
 
 .h3section, .section3 div, .h4section, .divideo, .divideo h4, .texto p, .divmicuenta label, .divmicuenta a{
     @include textcenter(center)
-} 
+}
 
+@mixin backgroundset ($center, $cover, $norepeat, $fixed){
+    background-position: $center;
+    background-size: $cover;
+    background-repeat: $norepeat;
+    background-attachment: $fixed;
+}
+
+main, .iniciar-sesion button{
+    @include backgroundset(center, cover, no-repeat, fixed)
+}
+
+header, footer, .cuadrado{
+    @include backgroundset(center, cover, no-repeat, none)
+}
+
+.cuadrado, .section3 div, .section4 .texto, .iniciar-sesion, section form .divmicuenta div, .main2 section div, .main3 div{
+    @include backgroundset(center, cover, none, none)
+}
 
 
 /* Animaciones */
