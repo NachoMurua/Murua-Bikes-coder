@@ -97,8 +97,6 @@ main{
     margin-bottom: 15px;
     div{
         div{
-            button{
-            }
         }
         div{
             div{
@@ -120,7 +118,6 @@ main{
     background-color: black;
     border-top: 6px white double;
     border-bottom: 6px white double;
-    text-align: center;
 }
 
 .section3{
@@ -132,7 +129,6 @@ main{
         width: 15rem;
         height: 24rem;
         padding: 10px;
-        text-align: center;
         font-size: 20px;
         &:hover{
             @extend %efectos;
@@ -174,7 +170,6 @@ section{
         background-color: black;
         border-top: 6px white double;
         border-bottom: 6px white double;
-        text-align: center;
     }
 }
 
@@ -187,7 +182,6 @@ section{
         background-size: cover;
         background-repeat: no-repeat;
         font-size: 20px;
-        text-align: center;
         width: 16rem;
         height: 26rem;
         padding: 15px;
@@ -200,7 +194,6 @@ section{
             padding-top: 5px;
             padding-bottom: 5px;
             background-color: black;
-            text-align: center;
             letter-spacing: 1px;
         }
         img{
@@ -230,7 +223,6 @@ section{
     }
     .texto{
         p{
-            text-align: center;
             margin: 20px;
             letter-spacing: 1px;
             font-size: 20px;
@@ -242,7 +234,7 @@ section{
             height: 350px;
             margin: 20px 30px 20px 20px;
             &:hover{
-                @extend %efectos;
+            @extend %efectos;
             }
         }
     }
@@ -251,9 +243,6 @@ section{
 /* MI CUENTA (INICIO DE SESION) */
 main{
     .form1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         padding: 40px;
         border-top: 2px solid black;
         border-bottom: 2px solid black;
@@ -268,23 +257,21 @@ main{
                     margin-bottom: 15px;
                 }
                 label{
-                    text-align: center;
                     margin-bottom: 5px;
                 }
                 input{
                     color: black !important;
                     margin-bottom: 15px;
                     background-color: white;
-                    border: 2px darkviolet  solid;
+                    border: 2px darkviolet solid;
                     padding: 10px;
                 }
                 a{
                     padding: 10px;
                     border-radius: 10px;
                     display: inline-block;
-                    border: 2px darkviolet  solid;
+                    border: 2px darkviolet solid;
                     margin-top: 20px;
-                    text-align: center;
                 }
             }
         }

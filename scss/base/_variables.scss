@@ -5,6 +5,7 @@ black,
 white,
 darkviolet;
 
+
 $fuentes:
 12px,
 15px,
@@ -33,6 +34,28 @@ $fuentes:
     justify-content: $justify;
     align-items: $align;
 }
+
+footer{
+    @include flex (flex, space-between, center)
+}
+
+header{
+    @include flex (flex, space-between, center)
+}
+
+.form1{
+    @include flex (flex, center, center)
+}
+
+@mixin textcenter ($center){
+    text-align: $center;
+}
+
+.h3section, .section3 div, .h4section, .divideo, .divideo h4, .texto p, .divmicuenta label, .divmicuenta a{
+    @include textcenter(center)
+} 
+
+
 
 /* Animaciones */
 

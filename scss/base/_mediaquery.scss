@@ -7,6 +7,7 @@ header{
             a{
                 h1{
                     font-size: 30px;
+                    margin-top: 10px;
                 }
             }
         }
@@ -48,9 +49,11 @@ header{
 }
 @media screen and (max-width:1035px){
 header{
-    .logo{
-        width: 40px;
-        height: 40px;
+    .section1head{
+        .logo{
+            width: 40px;
+            height: 40px;
+        }
     }
     .section3head{
         input{
@@ -153,7 +156,7 @@ header{
         div{
             a{
                 h1{
-                    font-size: 25px;
+                    font-size: 30px;
                 }
             }
         }
@@ -334,8 +337,7 @@ main{
         }
         div{
             iframe{
-                width: 40vh;
-                height: 30vh;
+                display: none;
             }
         }
     }

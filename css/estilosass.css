@@ -1,10 +1,7 @@
 /* HEADER */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 header {
-  background-attachment: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  background-attachment: fixed; }
   header .section1head {
     display: flex;
     padding-left: 20px; }
@@ -140,8 +137,7 @@ main .section1 {
   font-size: 25px;
   background-color: black;
   border-top: 6px white double;
-  border-bottom: 6px white double;
-  text-align: center; }
+  border-bottom: 6px white double; }
 
 .section3 div {
   border: 2px darkviolet solid;
@@ -150,7 +146,6 @@ main .section1 {
   width: 15rem;
   height: 24rem;
   padding: 10px;
-  text-align: center;
   font-size: 20px; }
   .section3 div:hover {
     border: 3px #c77dff solid; }
@@ -180,8 +175,7 @@ section .h4section {
   font-size: 25px;
   background-color: black;
   border-top: 6px white double;
-  border-bottom: 6px white double;
-  text-align: center; }
+  border-bottom: 6px white double; }
 
 .section4 {
   border-bottom: 2px solid black; }
@@ -191,7 +185,6 @@ section .h4section {
     background-size: cover;
     background-repeat: no-repeat;
     font-size: 20px;
-    text-align: center;
     width: 16rem;
     height: 26rem;
     padding: 15px;
@@ -202,7 +195,6 @@ section .h4section {
       padding-top: 5px;
       padding-bottom: 5px;
       background-color: black;
-      text-align: center;
       letter-spacing: 1px; }
     .section4 .divideo img {
       height: 220px;
@@ -225,7 +217,6 @@ section .h4section {
         background-image: url(../img/neontarjeta.png);
         border: 2px #c77dff solid; }
   .section4 .texto p {
-    text-align: center;
     margin: 20px;
     letter-spacing: 1px;
     font-size: 20px; }
@@ -236,9 +227,6 @@ section .h4section {
 
 /* MI CUENTA (INICIO DE SESION) */
 main .form1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 40px;
   border-top: 2px solid black;
   border-bottom: 2px solid black; }
@@ -249,51 +237,48 @@ main .form1 {
   main .form1 form .divmicuenta h1 {
     margin-bottom: 15px; }
   main .form1 form .divmicuenta label {
-    text-align: center;
     margin-bottom: 5px; }
   main .form1 form .divmicuenta input {
     color: black !important;
     margin-bottom: 15px;
     background-color: white;
-    border: 2px darkviolet  solid;
+    border: 2px darkviolet solid;
     padding: 10px; }
   main .form1 form .divmicuenta a {
     padding: 10px;
     border-radius: 10px;
     display: inline-block;
-    border: 2px darkviolet  solid;
-    margin-top: 20px;
-    text-align: center; }
+    border: 2px darkviolet solid;
+    margin-top: 20px; }
 
 /* FOOTER */
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  footer .div1fot {
-    padding: 30px;
-    font-size: 20px; }
-    footer .div1fot iframe {
-      width: 300px;
-      height: 170px; }
-  footer .div2fot ul {
-    display: inline-block;
-    padding-top: 10px; }
-    footer .div2fot ul li {
-      text-align: center;
-      font-size: 18px;
-      margin-bottom: 15px; }
-  footer .div3fot ul {
-    display: inline-block;
-    padding: 20px; }
-    footer .div3fot ul li a img {
-      margin: 15px;
-      width: 35px;
-      height: 35px; }
-  footer .div3fot ul img {
+footer .div1fot {
+  padding: 30px;
+  font-size: 20px; }
+  footer .div1fot iframe {
+    width: 300px;
+    height: 170px; }
+
+footer .div2fot ul {
+  display: inline-block;
+  padding-top: 10px; }
+  footer .div2fot ul li {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 15px; }
+
+footer .div3fot ul {
+  display: inline-block;
+  padding: 20px; }
+  footer .div3fot ul li a img {
     margin: 15px;
     width: 35px;
     height: 35px; }
+
+footer .div3fot ul img {
+  margin: 15px;
+  width: 35px;
+  height: 35px; }
 
 * {
   padding: 0;
@@ -341,6 +326,24 @@ main .section1 .slider, .section3, .section4 {
   object-fit: cover; }
 
 /* MIXIN */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.form1 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.h3section, .section3 div, .h4section, .divideo, .divideo h4, .texto p, .divmicuenta label, .divmicuenta a {
+  text-align: center; }
+
 /* Animaciones */
 @keyframes scroll {
   0% {
@@ -352,7 +355,8 @@ main .section1 .slider, .section3, .section4 {
 /* MEDIA QUERY HEADER */
 @media screen and (max-width: 1190px) {
   header .section1head div a h1 {
-    font-size: 30px; }
+    font-size: 30px;
+    margin-top: 10px; }
   header .section1head .logo {
     width: 55px;
     height: 55px; }
@@ -367,7 +371,7 @@ main .section1 .slider, .section3, .section4 {
     height: 35px; } }
 
 @media screen and (max-width: 1035px) {
-  header .logo {
+  header .section1head .logo {
     width: 40px;
     height: 40px; }
   header .section3head input {
@@ -404,7 +408,7 @@ main .section1 .slider, .section3, .section4 {
     header .section1head {
       padding-top: 15px; }
       header .section1head div a h1 {
-        font-size: 25px; }
+        font-size: 30px; }
     header .logo {
       display: none; }
     header .section2head nav ul {
@@ -501,8 +505,7 @@ main .section1 .slider, .section3, .section4 {
     width: 16rem;
     height: 26rem; }
   main .section4 div iframe {
-    width: 40vh;
-    height: 30vh; } }
+    display: none; } }
 
 /* QUERY FOOTER */
 @media screen and (max-width: 815px) {
