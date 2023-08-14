@@ -90,9 +90,6 @@ main .section1 {
 /* SECTION 2 HERO */
 .section2hero {
   background-image: url(../img/benelli302s.png);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
   display: grid;
   grid-template-columns: 0.8fr 1fr;
   grid-template-rows: 1fr;
@@ -179,9 +176,6 @@ section .h4section {
   border-bottom: 2px solid black; }
   .section4 .divideo {
     border-radius: 8px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     font-size: 20px;
     width: 16rem;
     height: 26rem;
@@ -202,6 +196,7 @@ section .h4section {
       margin-top: 15px;
       margin-bottom: 25px;
       padding: 6px;
+      background-color: black;
       border-radius: 8px;
       font-size: 25px; }
     .section4 .divideo a {
@@ -229,8 +224,6 @@ main .form1 {
     display: grid;
     padding: 50px;
     border: 2px white solid; }
-  main .form1 form .divmicuenta h1 {
-    margin-bottom: 15px; }
   main .form1 form .divmicuenta label {
     margin-bottom: 5px; }
   main .form1 form .divmicuenta input {
@@ -344,7 +337,7 @@ main, .iniciar-sesion button {
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
-header, footer, .cuadrado {
+header, footer, .cuadrado, .divideo {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -355,6 +348,12 @@ header, footer, .cuadrado {
   background-size: cover;
   background-repeat: none;
   background-attachment: none; }
+
+.section2hero {
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  background-attachment: fixed; }
 
 /* Animaciones */
 @keyframes scroll {
@@ -409,7 +408,7 @@ header, footer, .cuadrado {
 
 @media screen and (max-width: 740px) {
   header .section1head div a h1 {
-    font-size: 25px; }
+    font-size: 28px; }
   header .section4head .DropdownCarrito li a img {
     width: 25px;
     height: 25px; } }
@@ -420,7 +419,8 @@ header, footer, .cuadrado {
     header .section1head {
       padding-top: 15px; }
       header .section1head div a h1 {
-        font-size: 30px; }
+        font-size: 28px;
+        margin-bottom: 15px; }
     header .logo {
       display: none; }
     header .section2head nav ul {
@@ -431,7 +431,9 @@ header, footer, .cuadrado {
       display: inline-block; }
       header .section4head .DropdownBurguer li a .burguer {
         width: 25px;
-        height: 25px; } }
+        height: 25px; }
+      header .section4head .DropdownBurguer li .dropdown-menu {
+        background-image: url(../img/fondonegro.jpg); } }
 
 /*INICIO DE SESION MEDIA QUERY*/
 @media screen and (max-width: 690px) {
@@ -481,7 +483,7 @@ header, footer, .cuadrado {
     display: block; } }
 
 @media screen and (max-width: 580px) {
-  main .section3 .div2-3, main .section3 .div3-3, main .section3 .div4-3 {
+  main .section3 .div2-3, main .section3 .div3-3 {
     display: none; } }
 
 /* QUERIES SECTION 4*/

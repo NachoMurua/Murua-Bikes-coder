@@ -129,7 +129,7 @@ header{
         div{
             a{
                 h1{
-                    font-size: 25px;
+                    font-size: 28px;
                 }
             }
         }
@@ -156,7 +156,8 @@ header{
         div{
             a{
                 h1{
-                    font-size: 30px;
+                    font-size: 28px;
+                    margin-bottom: 15px;
                 }
             }
         }
@@ -183,6 +184,9 @@ header{
                         width: 25px;
                         height: 25px;
                     }
+                }
+                .dropdown-menu{
+                    background-image: url(../img/fondonegro.jpg);
                 }
             }
         }
@@ -268,7 +272,7 @@ main{
 @media screen and (max-width:580px){
 main{
     .section3{
-        .div2-3, .div3-3, .div4-3{
+        .div2-3, .div3-3{
             display: none;
         }
     }

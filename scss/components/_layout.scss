@@ -45,9 +45,6 @@ main{
 
 .section2hero{
     background-image: url(../img/benelli302s.png);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
     display: grid;
     grid-template-columns: 0.8fr 1fr;
     grid-template-rows: 1fr;
@@ -169,9 +166,6 @@ section{
     border-bottom: 2px solid black;
     .divideo{
         border-radius: 8px;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
         font-size: 20px;
         width: 16rem;
         height: 26rem;
@@ -196,6 +190,7 @@ section{
             margin-top: 15px;
             margin-bottom: 25px;
             padding: 6px;
+            background-color: black;
             border-radius: 8px;
             font-size: 25px;
         }
@@ -240,9 +235,6 @@ main{
                     display: grid;
                     padding: 50px;
                     border: 2px white solid;
-                }
-                h1{
-                    margin-bottom: 15px;
                 }
                 label{
                     margin-bottom: 5px;

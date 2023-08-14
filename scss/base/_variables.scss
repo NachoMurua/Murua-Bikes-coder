@@ -77,12 +77,16 @@ main, .iniciar-sesion button{
     @include backgroundset(center, cover, no-repeat, fixed)
 }
 
-header, footer, .cuadrado{
+header, footer, .cuadrado, .divideo{
     @include backgroundset(center, cover, no-repeat, none)
 }
 
 .cuadrado, .section3 div, .section4 .texto, .iniciar-sesion, section form .divmicuenta div, .main2 section div, .main3 div{
     @include backgroundset(center, cover, none, none)
+}
+
+.section2hero{
+    @include backgroundset(center, cover, none, fixed)
 }
 
 
